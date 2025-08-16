@@ -1,0 +1,15 @@
+<!-- error -->
+<div class="content">
+  @if (getCountry.error()) {
+    <app-cri-error/>
+  }
+<!--loading  -->
+@if (getCountry.isLoading()) {
+  <h1 class="loading">Cargando...</h1>
+}
+<!-- info page -->
+  @if (getCountry.hasValue()) {
+    <app-cri-info [getCountry]="getCountry.value()"/>
+  }
+</div>
+

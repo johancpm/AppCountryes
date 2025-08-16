@@ -1,0 +1,55 @@
+<div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Icono</th>
+              <th>Bandera</th>
+              <th>Nombre</th>
+              <th>Capital</th>
+              <th>Poblacion</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (capital of getCapital(); track $index; let index = $index) {
+              <tr>
+                <td >{{index + 1}}</td>
+                <td >{{capital.flag}}</td>
+                <td >
+                  <img [src]="capital.svg" [alt]="capital.name">
+                </td>
+                <td>{{capital.name}}</td>
+                <td>{{capital.capital}}</td>
+                <td>
+                  <span class="badge">
+                    {{capital.poblacion | number}}
+                  </span>
+                </td>
+                <td>
+                  <a
+                    [routerLink]="['/country-page/layout-page/page-cri', capital.cc2]"
+                    class="info">Mas Informacion
+                  </a>
+                </td>
+              </tr>
+            }
+            @if (errorMessage()) {
+              <tr class="messages">
+                <td  colspan="6">{{errorMessage()}}</td>
+              </tr>
+            }
+            <!--  -->
+            @if (getCapital().length == 0 && !isLoading()) {
+              <tr class="messages">
+                <td  colspan="6">No se encontraron Resultados</td>
+              </tr>
+            }
+            <!--  -->
+            @if (isLoading()) {
+              <tr class="messages">
+                <td colspan="6">Buscando Paises</td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      </div>

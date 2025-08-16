@@ -1,0 +1,34 @@
+<section class="textInfo">
+  <div class="stats shadow">
+    <div class="stat place-items-center">
+      <div class="stat-title">{{getCountry().name}}</div>
+      <div class="stat-value">{{getCountry().flag}}</div>
+      <div class="stat-desc">{{getCountry().continent}}</div>
+    </div>
+
+    <div class="stat place-items-center">
+      <div class="stat-title">Poblacion</div>
+      <div class="stat-value text-secondary">{{getCountry().poblacion | number  }}</div>
+      <div class="stat-desc text-secondary">Desde {{getFullYear()}}</div>
+    </div>
+
+    <div class="stat place-items-center">
+      <div class="stat-title">Fronteras</div>
+      <div class="stat-value">{{getCountry().front}}</div>
+
+    </div>
+  </div>
+</section>
+
+<section class="diff aspect-16/9 imgs" tabindex="0">
+  <div class="diff-item-1" role="img" tabindex="0">
+    <img alt="daisy" [src]="getCountry().svg" />
+  </div>
+  <div class="diff-item-2" role="img">
+    <img
+      class="blur brightnees-75"
+      alt="daisy"
+      [src]="getCountry().svg" />
+  </div>
+  <div class="diff-resizer"></div>
+</section>

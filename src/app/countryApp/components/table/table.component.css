@@ -1,0 +1,57 @@
+.table{
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  color: rgba(249, 246, 246, 0.7);
+  display:grid;
+  grid-template-columns: repeat(1, 3fr);
+  grid-column-gap: 10px;
+
+}
+
+
+
+
+
+th{
+  text-align: start;
+  box-sizing: border-box;
+  padding-bottom: 25px;
+  padding-left: 10px;
+  color:rgba(249, 246, 246, 0.7) ;
+}
+td{
+
+  padding-bottom: 15px;
+  padding-top: 15px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  border-top: solid 1px rgba(0, 0, 0, 0.2);
+}
+
+img{
+  width: 25px;
+}
+
+.info{
+  color: rgb(245, 110, 61) ;
+  text-decoration: none;
+}
+
+.info:hover {
+  cursor: pointer;
+  color: rgb(113, 60, 41) ;
+}
+.badge {
+  background: rgb(210, 106, 173);
+  border-radius: 5px;
+  color: black;
+  padding: 3px;
+  font-weight: bold;
+  border: none;
+}
+
+.messages td {
+  text-align: center;
+}

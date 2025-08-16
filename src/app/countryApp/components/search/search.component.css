@@ -1,0 +1,31 @@
+.search{
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 15px;
+  box-sizing: border-box;
+
+
+}
+
+.search input {
+  padding: 10px;
+  border-radius: 12px;
+  border: solid 2px rgba(138, 135, 135, 0.7);
+  margin-right: 5px;
+  background: rgb(30, 32, 47);
+  color: rgba(249, 246, 246, 0.7) ;
+  outline: none;
+
+}
+.search button {
+  border-radius: 12px;
+  border: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: bold;
+  background: rgb(245, 110, 61);
+  cursor: pointer;
+  margin-left: 10px;
+
+}

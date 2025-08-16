@@ -1,0 +1,14 @@
+
+<app-search
+(valueInput)="query.set($event)"
+placeHolder="Buscar por Pais"
+[initialValue]="query()"
+/>
+
+  <app-table
+  [getCapital]="getInfoCountry.value() ?? []"
+  [errorMessage]="getInfoCountry.error()"
+  [isLoading]="getInfoCountry.isLoading()"
+  [isEmpti]="getInfoCountry.value()?.length == 0"
+  />
+

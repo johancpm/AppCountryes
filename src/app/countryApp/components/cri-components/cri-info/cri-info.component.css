@@ -1,0 +1,24 @@
+
+
+.stat{
+  color: rgba(249, 246, 246, 0.7) !important;
+}
+.stat-title{
+  color: rgba(249, 246, 246, 0.7) !important;
+}
+
+.stat-desc{
+ color: rgba(249, 246, 246, 0.7) !important
+}
+
+.imgs {
+  width: 60%;
+  height: 60vh;
+  margin: auto;
+
+}
+
+.textInfo {
+  width: 60%;
+  margin: auto;
+}

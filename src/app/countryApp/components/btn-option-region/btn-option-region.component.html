@@ -1,0 +1,15 @@
+<div class="option">
+  <div class="optContent">
+    @for (btnRegion of regions; track $index) {
+
+      <button
+        (click)="emitRegion(btnRegion)"
+        [class.active]=" selectRegionOption() === btnRegion"
+      >
+        {{btnRegion}}
+      </button>
+
+    }
+  </div>
+
+</div>

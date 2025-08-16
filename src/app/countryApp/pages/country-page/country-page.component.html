@@ -1,0 +1,14 @@
+<app-search
+(valueInput)="statusQuery.set($event)"
+[placeHolder]="'Buscar por Capital'"
+[initialValue]="statusQuery()"
+/>
+
+      <app-table
+       [getCapital]="getInfoCapital.value() ?? []"
+       [errorMessage]="getInfoCapital.error()"
+       [isLoading]="getInfoCapital.isLoading()"
+       [isEmpti]="getInfoCapital.value()?.length == 0"
+       />
+
+

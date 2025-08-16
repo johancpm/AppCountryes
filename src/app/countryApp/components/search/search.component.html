@@ -1,0 +1,13 @@
+<div class="search">
+    <input type="text"
+     [placeholder]="placeHolder()"
+     #searchcountry
+     (keyup.enter)="valueInput.emit(searchcountry.value)"
+     (keyup)="effectValueInput.set(searchcountry.value)"
+     [value]="initialValue()"
+     >
+    <button
+    class="btnBuscar"
+    (click)="valueInput.emit(searchcountry.value)"
+    >Buscar</button>
+</div>
